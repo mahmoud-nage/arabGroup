@@ -1,20 +1,29 @@
 /* // start general  */
 
-.fa {
-    padding-left: 7px;
+body {
+    font-family: cairo, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.bg {
-    background-color: rgb(209, 0, 12);
+
+/* .fa {
+    padding-left: 7px;
+} */
+
+
+/* .bg {
+     background-color: rgb(0, 0, 89, 0.7) !important; 
 }
+*/
 
 ::placeholder {
     text-align: right;
 }
 
+
+/* 
 :hover {
     color: rgb(0, 0, 89, 0.7) !important;
-}
+} */
 
 
 /* // end general  */
@@ -32,14 +41,15 @@
     padding-left: auto;
 }
 
-#cart {
+
+/* #cart {
     background-color: rgb(209, 0, 12) !important;
 }
 
 #btn-search-category {
     background-color: rgb(209, 0, 12) !important;
     border-color: rgb(209, 0, 12) !important;
-}
+} */
 
 
 /* // end navs */
@@ -61,13 +71,66 @@
 
 /* // start slider */
 
-#slideshow0 img {
+
+/* #slideshow0 img {
     border-radius: 2px;
     width: 700px;
     height: 500px;
     margin: 0 90px;
-    /* percentage 0.714 */
+
+
 }
+*/
 
 
 /* // endslider */
+
+
+/* // start features slider  */
+
+.allleftb {
+    float: right !important;
+}
+
+.home-heading {
+    text-align: right;
+    right: 27px;
+    left: auto;
+}
+
+.owl-item {
+    float: right !important;
+}
+
+.owl-wrapper {
+    float: right !important;
+}
+
+
+/* // end features slider  */
+
+
+/* // start footer  */
+
+footer a {
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.middle-footer li::before {
+    right: 0;
+    left: auto;
+}
+
+footer h5::before {
+    right: 15px;
+}
+
+footer .footcontact .f-left li i {
+    float: right;
+    margin-left: 10px;
+    text-align: center;
+}
+
+
+/* // end footer  */

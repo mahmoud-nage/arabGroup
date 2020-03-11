@@ -16,15 +16,9 @@ Auth::routes(['register' => false]);
 
 
 
-Route::get('fronts', function () {
-    return view('front.layouts.index');
-});
-
-// Route::resource('user', 'UserController');
 Route::resource('home', 'HomeController');
 
 Route::group(['middleware' => ['auth', 'LoginCheck'], 'prefix' => 'admin'], function (){
-
 
 Route::get('/dash', function () {
     return view('admin.dashboard');
@@ -54,6 +48,20 @@ Route::resource('order', 'OrderController');
 Route::resource('bookorder', 'BookOrderController');
 
 });
+
+Route::group(['prefix' => 'fronts'], function (){
+
+    Route::get('/', function () {
+        return view('front.layouts.index');
+    });
+
+Route::get('/most-views/{views}', 'Front\MainController@books');
+Route::get('/features/{features}', 'Front\MainController@books');
+Route::get('/latest/{latest}', 'Front\MainController@books');
+
+});
+
+
 
 
 

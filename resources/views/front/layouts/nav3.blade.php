@@ -36,19 +36,6 @@
                                                             </li>
                                                         </ul>
                                                         @endforeach
-
-                                                        {{-- <ul class="list-unstyled">
-                                                            
-                                                            <li class="dropdown-submenu"> <a href="indexf345.html?route=product/category&amp;path=20_27" class="submenu-title"> Biographies Books (26) </a>
-                                                                <ul class="list-unstyled grand-child">
-                                                                    <li><a href="indexe643.html?route=product/category&amp;path=27_64"> General Non-Ficton Books (21) </a> </li>
-                                                                <li><a href="index9049.html?route=product/category&amp;path=27_66"> Healthy Living  Books (3) </a> </li>
-                                                                <li><a href="index363d.html?route=product/category&amp;path=27_67"> Memoirs Books (1) </a> </li>
-                                                                <li><a href="index1652.html?route=product/category&amp;path=27_65"> Wellness Books (2) </a> </li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul> --}}
-                                                    
                                                 </div>
                                                 </div>
                                         </li>  
@@ -107,16 +94,13 @@
                         </div>
                         <div class="col-md-9 col-sm-8 text-right" style="direction: rtl">
                             <ul class="list-inline static-menu hidden-xs">
-                            <li><a href="index9328.html?route=common/home">{{__('الرئيسيه')}}</a></li>
-                            <li><a href="index9328.html?route=common/home">{{__('من نحن')}}</a></li>
-                            <li><a href="index9328.html?route=common/home">{{__('اكثر مشاهده')}}</a></li>
-                            <li><a href="index9328.html?route=common/home">{{__('الكتب المختاره')}}</a></li>
-                            <li><a href="index9328.html?route=common/home">{{__('الاخبار')}}</a></li>
-                            <li><a href="index9328.html?route=common/home">{{__('منافذ توزيع')}}</a></li>
-                            <li><a href="index9328.html?route=common/home">{{__('انشر كتابك')}}</a></li>
-                            <li><a href="index9328.html?route=common/home">{{__('قائمه الكتب')}}</a></li>
-                            {{-- <li><a href="index9328.html?route=common/home">{{__('اتصل بنا')}}</a></li> --}}
-
+                                <li><a href="index9328.html?route=common/home">{{__('اكثر مشاهده')}}</a></li>
+                                <li><a href="index9328.html?route=common/home">{{__('الكتب المختاره')}}</a></li>
+                                <li><a href="index9328.html?route=common/home">{{__('الاخبار')}}</a></li>
+                                <li><a href="index9328.html?route=common/home">{{__('التوزيعات')}}</a></li>
+                                <li><a href="index9328.html?route=common/home">{{__('منافذ توزيع')}}</a></li>
+                                <li><a href="index9328.html?route=common/home">{{__('انشر كتابك')}}</a></li>
+                                <li><a href="index9328.html?route=common/home">{{__('قائمه الكتب')}}</a></li>
                             </ul>
                         </div>
                     </div>

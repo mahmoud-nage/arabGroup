@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Book;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class BookController extends Controller 
 {
@@ -46,8 +47,8 @@ class BookController extends Controller
       'author' => 'required',
       'details' => 'required',
       'publish_date' => 'required',
-      'cover_img' => 'required|mimes:,png,jpg,gif',
-      'back_img' => 'mimes:png,jpg,gif',
+      'cover_img' => 'required|mimes:png,jpg,gif,jpeg',
+      'back_img' => 'mimes:png,jpg,gif,jpeg',
       'pdf' => 'mimes:pdf',
       'weight' => 'required',
       'category_id' => 'required',
@@ -69,16 +70,11 @@ class BookController extends Controller
 
     // image store and make unique name
     if($request->hasFile('cover_img')){
-      $image1= pathinfo(request()->cover_img->getClientOriginalName(),PATHINFO_FILENAME).time().'.'.request()->cover_img->getClientOriginalExtension();
-      $request->file('cover_img')->move(public_path('/book/images'), $image1);
-      $record->cover_img = $image1;
+      $record->cover_img = uploadImage($request->file('cover_image'));
     }
 
     if($request->hasFile('back_img')){
-      $image2= pathinfo(request()->back_img->getClientOriginalName(),PATHINFO_FILENAME).time().'.'.request()->back_img->getClientOriginalExtension();
-      $request->file('back_img')->move(public_path('/book/images'), $image2);
-      $record->back_img = $image2;
-
+      $record->back_img = uploadImage($request->file('back_image'));
     }
     if($request->hasFile('pdf')){
         $pdf= pathinfo(request()->pdf->getClientOriginalName(),PATHINFO_FILENAME).time().'.'.request()->pdf->getClientOriginalExtension();
@@ -123,8 +119,8 @@ class BookController extends Controller
   public function update(Request $request, $id)
   {
     $request->validate([
-        'cover_img' => 'mimes:,png,jpg,gif',
-        'back_img' => 'mimes:png,jpg,gif',
+        'cover_img' => 'mimes:png,jpg,gif,jpeg',
+        'back_img' => 'mimes:png,jpg,gif,jpeg',
         'pdf' => 'mimes:pdf',
     ]);
 
@@ -139,14 +135,11 @@ class BookController extends Controller
 
     // image store and make unique name
     if($request->hasFile('cover_img')){
-      $image1= pathinfo(request()->cover_img->getClientOriginalName(),PATHINFO_FILENAME).time().'.'.request()->cover_img->getClientOriginalExtension();
-      $request->file('cover_img')->move(public_path('/book/images'), $image1);
-      $record->cover_img = $image1;
+      $record->cover_img = uploadImage($request->file('cover_img'));
     }
+
     if($request->hasFile('back_img')){
-      $image2= pathinfo(request()->back_img->getClientOriginalName(),PATHINFO_FILENAME).time().'.'.request()->back_img->getClientOriginalExtension();
-      $request->file('back_img')->move(public_path('/book/images'), $image2);
-      $record->back_img = $image2;
+      $record->back_img = uploadImage($request->file('back_img'));
     }
     if($request->hasFile('pdf')){
         $pdf= pathinfo(request()->pdf->getClientOriginalName(),PATHINFO_FILENAME).time().'.'.request()->pdf->getClientOriginalExtension();

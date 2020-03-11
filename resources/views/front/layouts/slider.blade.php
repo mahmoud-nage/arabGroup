@@ -1,5 +1,6 @@
 <div class="row">
-    <div class="col-md-9 col-sm-8 slide-padding">
+    <div class="col-md-3 col-sm-4 pull-right"></div>
+    <div class="col-md-6 col-sm-8 slide-padding pull-right">
         <div class="homeslide">
             <div id="slideshow0" class="owl-carousel owl-theme">
                 <div class="text-center">
@@ -28,7 +29,7 @@
             });
         });
     </script>
-    {{-- <div class="col-md-3 rightbanner hidden-xs hidden-sm">
+    <div class="col-md-3 rightbanner hidden-xs hidden-sm pull-left">
         <div class=" banner-effect">
             <a href="#">
                 <img src="{{url('/front')}}/image/cache/catalog/right-banner/267X153-3-267x153.jpg" alt="banner" class="img-responsive" />
@@ -44,7 +45,7 @@
                 <img src="{{url('/front')}}/image/cache/catalog/right-banner/267X153-1-267x153.jpg" alt="banner" class="img-responsive" />
             </a>
         </div>
-    </div> --}}
+    </div>
 
 
 </div>

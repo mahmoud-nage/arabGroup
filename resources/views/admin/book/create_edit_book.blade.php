@@ -138,7 +138,7 @@
                   <div class="form-group">
                     <h5>{{__('صوره الغلاف')}}<span class="required" style="color:red">*</span></h5>
                     <div class="controls mb-1">
-                      <input value="{{$record->cover_img}}" accept="jpg,png,gif" type="file" id="cover_img" name="cover_img" class="form-control @error('cover_img') is-invalid @enderror" @if(!$record->cover_img) required @endif autocomplete="off">
+                      <input value="{{$record->cover_img}}" accept="jpg,png,gif,jpeg" type="file" id="cover_img" name="cover_img" class="form-control @error('cover_img') is-invalid @enderror" @if(!$record->cover_img) required @endif autocomplete="off">
                       @error('cover_img')
                       <span class="invalid-feedback" role="alert">
                           <strong>{{ $message }}</strong>
@@ -152,7 +152,7 @@
                   <div class="form-group">
                     <h5>{{__('صوره الخلف')}}</h5>
                     <div class="controls mb-1">
-                      <input value="{{$record->back_img}}" accept="jpg,png,gif" type="file" name="back_img" class="form-control @error('back_img') is-invalid @enderror">
+                      <input value="{{$record->back_img}}" accept="jpg,png,gif,jpeg" type="file" name="back_img" class="form-control @error('back_img') is-invalid @enderror">
                       @error('back_img')
                       <span class="invalid-feedback" role="alert">
                           <strong>{{ $message }}</strong>

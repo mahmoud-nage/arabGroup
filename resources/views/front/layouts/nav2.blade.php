@@ -1,14 +1,14 @@
 <header>
     <div class="container">
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-3 pull-right">
                 <div id="logo">
-                    <a href="index9328.html?route=common/home">
-                        <img src="{{url('/images')}}/logo.png" title="Shoppee Store" alt="Shoppee Store" class="img-responsive" />
+                <a href="{{url('/fronts')}}">
+                        <img src="{{url('/images')}}/logo.png" title="Shoppee Store" alt="Shoppee Store" class="img-responsive pull-right" />
                     </a>
                 </div>
             </div>
-            <div class="col-sm-6 col-xs-12" style="margin-top: 20px">
+            <div class="col-sm-6 col-xs-12 pull-right" style="margin-top: 20px">
                 <div id="search-by-category">
                     <div class="search-container">
                         <div class="categories-container text-right">
@@ -16,8 +16,8 @@
                                 <p><span class="cate-selected" data-value="0">التصنيفات</span></p>
                                 <ul class="cate-items">
                                     @if(isset($cats))
-                                        @foreach ($cats->all() as $cat)
-                                <li class="item-cate" data-value="{{$cat->id}}">{{$cat->name}}</li>
+                                        @foreach ($cats->where('parent_id', 0)->get() as $cat)
+                                            <li class="item-cate" data-value="{{$cat->id}}">{{$cat->name}}</li>
                                         @endforeach
                                     @endif
                                 </ul>
@@ -160,7 +160,7 @@
                     });
                 </script>
             </div>
-            <div class="col-sm-3 text-right xs-cart" style="margin-top: 20px">
+            <div class="col-sm-3 text-left xs-cart" style="margin-top: 20px">
                 <div id="cart" class="btn-group">
                 <button data-toggle="dropdown" data-loading-text="Loading..." class="dropdown-toggle text-right" style="direction: rtl"><svg height="16px" width="16px"><use xlink:href="#basket"></use></svg> <span id="cart-total">{{__('عنصر')}}</span></button>
                     <ul class="dropdown-menu text-right">
