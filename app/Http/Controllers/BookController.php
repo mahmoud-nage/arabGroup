@@ -64,17 +64,17 @@ class BookController extends Controller
     $request->merge(['permalink_description'=> substr(strip_tags($request->details), 1, 150).time()]);
 
     // intial views
-    $request->merge(['views'=>0]);
+    $request->merge(['views' => 0]);
     
     $record = Book::create($request->except('back_img', 'cover_img', 'pdf'));
 
     // image store and make unique name
     if($request->hasFile('cover_img')){
-      $record->cover_img = uploadImage($request->file('cover_image'));
+      $record->cover_img = uploadImage($request->cover_img);
     }
 
     if($request->hasFile('back_img')){
-      $record->back_img = uploadImage($request->file('back_image'));
+      $record->back_img = uploadImage($request->back_img);
     }
     if($request->hasFile('pdf')){
         $pdf= pathinfo(request()->pdf->getClientOriginalName(),PATHINFO_FILENAME).time().'.'.request()->pdf->getClientOriginalExtension();

@@ -20,4 +20,10 @@ class MainController extends Controller
         }
         dd($records);
     }
+
+    public function book($id){
+        $record = Book::find($id);
+        return view('front.book', compact('record'));
+    }
+
 }

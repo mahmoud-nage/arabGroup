@@ -2,32 +2,27 @@
 
     <div class="foot-top">
         <div class="container">
-            <div class="inspire-newsletter  inspire-newsletter" id="newsletter_1582557725" data-mode="default">
-                <form id="formNewLestter" method="post" action="http://templatetasarim.com/opencart/Books/index.php?route=extension/module/inspirenewsletter/subscribe" class="formNewLestter newsletter-bg">
+            <div class="inspire-newsletter  inspire-newsletter">
+                <form id="formNewLestter" method="post" class="formNewLestter newsletter-bg">
                     <div class="inner row">
-                        <div class="col-sm-5 col-xs-12 hidden-xs">
-                            <div class="sign-up-img"></div>
+                        <div class="col-sm-5 col-xs-12 hidden-xs pull-right text-right">
+                                <i class="fas fa-envelope-open-text"></i>
 
                             <div class="description-top">
-                                <h3>Newsletter</h3>
-                                <p>
-                                    <p>Signup Our newsletter And get latest updates!</p>
-                                </p>
+                            <h3>{{__('القائمة البريدية')}}</h3>
+                                <p>{{__('من فضلك ادخل البيانات المطلوبه')}}</p>
                             </div>
                         </div>
                         <div class="col-sm-7 col-xs-12">
                             <div class="form-group">
-                                <input type="text" class="form-control input-md inputNew" onblur="javascript:if(this.value=='')this.value='Your email address';" onfocus="javascript:if(this.value=='Your email address')this.value='';" value="Your email address" size="18" name="email">
+                                <input type="text" class="form-control input-md inputNew text-right" onblur="javascript:if(this.value=='')this.value='بريدك الالكترونى';" onfocus="javascript:if(this.value=='بريدك الالكترونى')this.value='';" value="بريدك الالكترونى" size="18" name="email">
                             </div>
                             <div class="button-submit">
-                                <button type="submit" name="submitNewsletter" class="btn btn-danger">Subscribe</button>
+                            <button type="submit" name="submitNewsletter" class="btn btn-danger">{{__('ارسال')}}</button>
                             </div>
                             <input type="hidden" value="1" name="action">
                             <div class="valid"></div>
                             <div class="description-bottom">
-
-
-
                             </div>
                         </div>
                     </div>
@@ -42,10 +37,10 @@
         </div>
     </div>
     <div class="container">
-        <div class="row">
+        <div class="row text-right">
 
 
-            <aside id="column-left1" class="col-sm-3 pull-right text-right">
+            <aside id="column-left1" class="col-lg-3 col-sm-3 pull-right">
                 <div>
                 <h5><span>{{__('اتصل بنا')}}</span>
                         <button type="button" class="btn btn-primary toggle collapsed" data-toggle="collapse" data-target="#contact"></button>
@@ -70,12 +65,13 @@
 
             <div class="middle-footer">
                
-                <div class="col-sm-3 pull-right text-right">
+                <div class="col-lg-3 col-sm-3 pull-right">
                     <h5>{{__('معلومات')}}
                         <button type="button" class="btn btn-primary toggle collapsed" data-toggle="collapse" data-target="#info"></button>
                     </h5>
                     <div id="info" class="collapse footer-collapse">
                         <ul class="list-unstyled">
+                            
                             <li><a href="index9328.html?route=common/home">{{__('الاخبار')}}</a></li>
                             <li><a href="index9328.html?route=common/home">{{__('التوزيعات')}}</a></li>
                             <li><a href="index9328.html?route=common/home">{{__('منافذ توزيع')}}</a></li>
@@ -83,6 +79,48 @@
                             <li><a href="index9328.html?route=common/home">{{__('قائمه الكتب')}}</a></li>
                             <li><a href="index9328.html?route=common/home">{{__('اكثر مشاهده')}}</a></li>
                             <li><a href="index9328.html?route=common/home">{{__('الكتب المختاره')}}</a></li>
+                        </ul>
+                    </div>
+                </div>               
+                <div class="col-lg-6 col-sm-3 pull-left">
+                    <h5>{{__('التصنيفات')}}
+                        <button type="button" class="btn btn-primary toggle collapsed" data-toggle="collapse" data-target="#info"></button>
+                    </h5>
+                    <div id="info" class="collapse footer-collapse">
+                        <ul class="list-unstyled">
+                            <div class="col-lg-3">
+                                <li><a href="index9328.html?route=common/home">{{__('تصنيف')}}</a></li>
+                                <li><a href="index9328.html?route=common/home">{{__('تصنيف')}}</a></li>
+                                <li><a href="index9328.html?route=common/home">{{__('تصنيف ')}}</a></li>
+                                <li><a href="index9328.html?route=common/home">{{__('تصنيف ')}}</a></li>
+                                <li><a href="index9328.html?route=common/home">{{__('تصنيف ')}}</a></li>
+                                <li><a href="index9328.html?route=common/home">{{__('تصنيف ')}}</a></li>
+                            </div>
+                            <div class="col-lg-3">
+                                <li><a href="index9328.html?route=common/home">{{__('تصنيف')}}</a></li>
+                                <li><a href="index9328.html?route=common/home">{{__('تصنيف')}}</a></li>
+                                <li><a href="index9328.html?route=common/home">{{__('تصنيف ')}}</a></li>
+                                <li><a href="index9328.html?route=common/home">{{__('تصنيف ')}}</a></li>
+                                <li><a href="index9328.html?route=common/home">{{__('تصنيف ')}}</a></li>
+                                <li><a href="index9328.html?route=common/home">{{__('تصنيف ')}}</a></li>
+                            </div>
+                            <div class="col-lg-3">
+                                <li><a href="index9328.html?route=common/home">{{__('تصنيف')}}</a></li>
+                                <li><a href="index9328.html?route=common/home">{{__('تصنيف')}}</a></li>
+                                <li><a href="index9328.html?route=common/home">{{__('تصنيف ')}}</a></li>
+                                <li><a href="index9328.html?route=common/home">{{__('تصنيف ')}}</a></li>
+                                <li><a href="index9328.html?route=common/home">{{__('تصنيف ')}}</a></li>
+                                <li><a href="index9328.html?route=common/home">{{__('تصنيف ')}}</a></li>
+                            </div>
+                            <div class="col-lg-3">
+                                <li><a href="index9328.html?route=common/home">{{__('تصنيف')}}</a></li>
+                                <li><a href="index9328.html?route=common/home">{{__('تصنيف')}}</a></li>
+                                <li><a href="index9328.html?route=common/home">{{__('تصنيف ')}}</a></li>
+                                <li><a href="index9328.html?route=common/home">{{__('تصنيف ')}}</a></li>
+                                <li><a href="index9328.html?route=common/home">{{__('تصنيف ')}}</a></li>
+                                <li><a href="index9328.html?route=common/home">{{__('تصنيف ')}}</a></li>
+                            </div>
+
                         </ul>
                     </div>
                 </div>

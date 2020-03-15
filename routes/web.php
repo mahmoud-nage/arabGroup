@@ -51,13 +51,19 @@ Route::resource('bookorder', 'BookOrderController');
 
 Route::group(['prefix' => 'fronts'], function (){
 
+    Route::get('/welcome', function () {
+        return view('front.welcome');
+    });
     Route::get('/', function () {
-        return view('front.layouts.index');
+        return view('front.index');
     });
 
 Route::get('/most-views/{views}', 'Front\MainController@books');
 Route::get('/features/{features}', 'Front\MainController@books');
 Route::get('/latest/{latest}', 'Front\MainController@books');
+
+
+Route::get('/book/{id}', 'Front\MainController@book');
 
 });
 

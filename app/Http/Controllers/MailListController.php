@@ -40,7 +40,6 @@ class MailListController extends Controller
   {
     $request->validate([
       'email' => 'required|unique:mail_lists',
-      'name' => 'required',
     ]);
 
     $record = MailList::create($request->all());

@@ -9,7 +9,9 @@ class Book extends Model
 
     protected $table = 'books';
     public $timestamps = true;
-    protected $fillable = array('details', 'name', 'author', 'isbn', 'publish_date', 'cover_img', 'back_img', 'pdf', 'price', 'weight', 'views', 'favourite', 'category_id', 'permalink_title', 'permalink_description', 'permalink_keyword');
+    protected $fillable = array('details', 'name', 'author', 'isbn', 'publish_date',
+     'cover_img', 'back_img', 'pdf', 'price', 'weight', 'views', 'favourite',
+      'category_id', 'permalink_title', 'permalink_description', 'permalink_keyword');
 
     public function category()
     {

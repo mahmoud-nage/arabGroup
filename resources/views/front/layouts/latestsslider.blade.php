@@ -27,26 +27,12 @@
                                                     </div>
                                                     <div class="caption">
                                                         <div class="hoverdes">
-                                                            <h4><a href="{{route('books.show', $book->id)}}">History of 1984</a></h4>
+                                                        <h4><a href="{{route('books.show', $book->id)}}">{{$book->name}}</a></h4>
                                                             <div class="rating">
-                                                                <span class="fa fa-stack">
-              <i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i>
-            </span>
-                                                                <span class="fa fa-stack">
-              <i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i>
-            </span>
-                                                                <span class="fa fa-stack">
-              <i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i>
-            </span>
-                                                                <span class="fa fa-stack">
-              <i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i>
-            </span>
-                                                                <span class="fa fa-stack">
-              <i class="fa fa-star-o fa-stack-2x"></i>
-            </span>
+                    
                                                             </div>
                                                             <p class="price">
-                                                                <span class="price-new">$110.00</span> <span class="price-old">$122.00</span>
+                                                            <span class="price-new">{{$book->price}}</span> $
                                                             </p>
                                                         </div>
 

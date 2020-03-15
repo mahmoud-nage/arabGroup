@@ -13,7 +13,7 @@ class CreateBooksTable extends Migration {
 			$table->string('name');
 			$table->string('author');
 			$table->string('isbn');
-			$table->string('details');
+			$table->text('details');
 			$table->date('publish_date');
 			$table->string('cover_img')->nullable();
 			$table->string('back_img')->nullable();

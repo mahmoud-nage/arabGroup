@@ -31,10 +31,14 @@ class AppServiceProvider extends ServiceProvider
         $setting = Setting::first();
         if($setting){
             view()->share('setting', $setting);
+        }else{
+            view()->share('setting', new Setting);
         }
         $cats = Category::first();
         if($cats){
             view()->share('cats', $cats);
+        }else{
+            view()->share('cats', new Category);
         }
     }
 }

@@ -1,5 +1,8 @@
 <?php
 
+use Intervention\Image\Facades\Image;
+
+
 
     function responseJson($status, $message, $data = null)
     {
@@ -14,7 +17,7 @@
     }
 
 
-    function uploadImage($upload, $resize_width = 465, $resize_height = 465){
+    function uploadImage($upload, $resize_width = 495, $resize_height = 750){
         $filename = rand().time().'.'.$upload->getClientOriginalExtension();
         $filePath = public_path('uploads/').$filename;
         $thumbPath = public_path('uploads/thumbs/').$filename;

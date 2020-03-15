@@ -68,46 +68,18 @@
 
                             </div>
 
-                            <div class="">
-                                <div class="logo-slider">
-                                    <div id="carousel0" class="owl-carousel owl-theme">
-
-                                        <div class="text-center">
-                                            <a href="#"><img src="{{url('/front')}}/image/cache/catalog/brand/brand-8-150x100.png" alt="Harley Davidson" class="center-block img-responsive" /></a>
-                                        </div>
-                                        <div class="text-center">
-                                            <a href="#"><img src="{{url('/front')}}/image/cache/catalog/brand/brand-8-150x100.png" alt="Burger King" class="center-block img-responsive" /></a>
-                                        </div>
-                                        <div class="text-center">
-                                            <a href="#"><img src="{{url('/front')}}/image/cache/catalog/brand/brand-7-150x100.png" alt="Sony" class="center-block img-responsive" /></a>
-                                        </div>
-                                        <div class="text-center">
-                                            <a href="#"><img src="{{url('/front')}}/image/cache/catalog/brand/brand-6-150x100.png" alt="Coca Cola" class="center-block img-responsive" /></a>
-                                        </div>
-                                        <div class="text-center">
-                                            <a href="#"><img src="{{url('/front')}}/image/cache/catalog/brand/brand-58-150x100.png" alt="RedBull" class="center-block img-responsive" /></a>
-                                        </div>
-                                        <div class="text-center">
-                                            <a href="#"><img src="{{url('/front')}}/image/cache/catalog/brand/brand-5-150x100.png" alt="Dell" class="center-block img-responsive" /></a>
-                                        </div>
-                                        <div class="text-center">
-                                            <a href="#"><img src="{{url('/front')}}/image/cache/catalog/brand/2-150x100.png" alt="Starbucks" class="center-block img-responsive" /></a>
-                                        </div>
-                                        <div class="text-center">
-                                            <a href="#"><img src="{{url('/front')}}/image/cache/catalog/brand/1-150x100.png" alt="Nintendo" class="center-block img-responsive" /></a>
-                                        </div>
-                                        <div class="text-center">
-                                            <a href="#"><img src="{{url('/front')}}/image/cache/catalog/brand/brand-2-150x100.png" alt="Disney" class="center-block img-responsive" /></a>
-                                        </div>
-                                        <div class="text-center">
-                                            <a href="#"><img src="{{url('/front')}}/image/cache/catalog/brand/brand-4-150x100.png" alt="NFL" class="center-block img-responsive" /></a>
-                                        </div>
-                                        <div class="text-center">
-                                            <a href="#"><img src="{{url('/front')}}/image/cache/catalog/brand/1-150x100.png" alt="Canon" class="center-block img-responsive" /></a>
-                                        </div>
+                            <div class="row welcome-msg">
+                                    <div class="col-lg-6 col-md-6 col-xs-12">
+                                        <a href="{{asset('images\about-us.png')}}"><img src="{{asset('images\about-us.png')}}" alt="about-us"></a>    
                                     </div>
-                                </div>
+                                
+                                    <div class="col-lg-6 col-md-6 col-xs-12">
+                                        <p>{!!$setting->welcome_msg!!}</p>
+                                    </div>
                             </div>
+
+                            {{-- @include('front.layouts.news') --}}
+
 
                             <script type="text/javascript">
                                 $(document).ready(function() {
